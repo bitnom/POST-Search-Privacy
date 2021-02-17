@@ -1,0 +1,17 @@
+{
+  "name": "http-post-search",
+
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/TensorTom/POST-Search-Privacy.git",
+  "author": "Tom A. <14287229+TensorTom@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "clear": "rm -rf dist .cache",
+    "watch": "yarn clear && parcel watch src/{search.html,options.html,background.js} -d dist/src --public-url ./ -t node --bundle-node-modules",
+    "build": "yarn clear && parcel build src/{main.html,options.html,background.js} -d dist/src --public-url ./"
+ }
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}

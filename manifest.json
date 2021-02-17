@@ -1,0 +1,32 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "description": "Automatically replaces insecure GET requests of search providers with secure/private POST requests. It even works with searches via the address bar. Just set it and forget it! Source-code is available on Github under MIT License.",
+   "homepage_url": "https://github.com/TensorTom/POST-Search-Privacy",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "32": "img/icon32.png",
+      "48": "img/icon48.png"
+   },
+   "incognito": "split",
+   "manifest_version": 2,
+   "name": "POST Search Privacy",
+   "permissions": [
+      "http://duckduckgo.com/?*q=*",
+      "https://duckduckgo.com/?*q=*",
+      "http://start.duckduckgo.com/?*q=*",
+      "https://start.duckduckgo.com/?*q=*",
+      "http://www.startpage.com/sp/search?*query=*",
+      "https://www.startpage.com/sp/search?*query=*",
+      "http://startpage.com/sp/search?*query=*",
+      "https://startpage.com/sp/search?*query=*",
+      "tabs",
+      "webRequestBlocking",
+      "webRequest"
+   ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}
