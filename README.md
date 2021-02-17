@@ -37,4 +37,8 @@ The extension monitors your searches in the background. If it sees a GET request
 
 For we who install extensions, problem solved. What about everyone else? Well, there have been massive feature request threads going back several years. I participated in some of them. Here we sit.
 
+## How To Build (For Developers)
+
+`yarn build`
+
 ### MIT License
