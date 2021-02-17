@@ -14,7 +14,7 @@ function url_to_queries(_url) {
 chrome.webRequest.onBeforeRequest.addListener(
 	function (details) {
 		chrome.tabs.update(details.tabId, {
-			url: chrome.runtime.getURL("search.html"),
+			url: chrome.runtime.getURL("src/search.html"),
 		})
 		
 		var url = new URL(details.url)

@@ -3,7 +3,7 @@
       "persistent": true,
       "scripts": [ "./src/background.js" ]
    },
-   "description": "Automatically replaces insecure GET requests of search providers with secure/private POST requests. It even works with searches via the address bar. Just set it and forget it! Source-code is available on Github under MIT License.",
+   "description": "Automatically replaces insecure GET requests of search providers with secure/private POST requests.",
    "homepage_url": "https://github.com/TensorTom/POST-Search-Privacy",
    "icons": {
       "128": "static/img/icon128.png",
