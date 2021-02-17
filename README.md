@@ -1,4 +1,4 @@
-# HTTP POST Search [Chrome extension]
+# POST Search Privacy [Chrome extension]
 
 Chrome extension which replaces insecure GET requests (Like `https://search.com/?query=cat+memes`) of search providers with secure POST requests.
 
