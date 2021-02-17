@@ -11,6 +11,19 @@
     "watch": "yarn clear && parcel watch src/{search.html,search.js,background.js} -d dist/src --public-url ./ -t node --bundle-node-modules",
     "build": "yarn clear && parcel build src/{search.html,search.js,background.js} -d dist/src --public-url ./"
   },
+  ,
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "static",
+        "staticOutDir": "../static/"
+      },
+      {
+        "staticPath": "manifest.json",
+        "staticOutDir": "../"
+      }
+    ]
+  },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
   }
