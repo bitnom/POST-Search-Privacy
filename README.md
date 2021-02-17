@@ -2,6 +2,11 @@
 
 Chrome extension which replaces insecure GET requests (Like `https://search.com/?query=cat+memes`) of search providers with secure POST requests.
 
+### Supported Search Engines
+
+- Startpage
+- DuckDuckGo
+
 ## Motivation
 
 This is a pretty simple yet longstanding problem. We all know that if we visit a site with `https://` in the link, it means our web browser has an encrypted (SSL) connection to the web-site. This is great for securely submitting passwords and other personal data. The problem is, the characters that comprise the URL in a GET request are not private at all.
