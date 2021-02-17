@@ -8,9 +8,9 @@
   "license": "MIT",
   "scripts": {
     "clear": "rm -rf dist .cache",
-    "watch": "yarn clear && parcel watch src/{search.html,options.html,background.js} -d dist/src --public-url ./ -t node --bundle-node-modules",
-    "build": "yarn clear && parcel build src/{main.html,options.html,background.js} -d dist/src --public-url ./"
- }
+    "watch": "yarn clear && parcel watch src/{search.html,search.js,background.js} -d dist/src --public-url ./ -t node --bundle-node-modules",
+    "build": "yarn clear && parcel build src/{search.html,search.js,background.js} -d dist/src --public-url ./"
+  },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
   }
