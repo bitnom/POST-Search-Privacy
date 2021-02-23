@@ -4,6 +4,8 @@ Chrome extension which replaces insecure GET requests (Like `https://search.com/
 
 **Version:** 1.0.1
 
+**Install via Chrome Web Store:** https://u.nu/gvxy0
+
 ### Supported Search Engines
 
 - Startpage
