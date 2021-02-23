@@ -21,14 +21,18 @@
         "staticOutDir": "../"
       }
     ],
-    "excludeGlob": ["static/img/logo.xcf", "./static/img/art.7z", "./static/img/logo.png"],
+    "excludeGlob": [
+      "static/img/logo.xcf",
+      "./static/img/art.7z",
+      "./static/img/logo.png"
+    ],
     "globOptions": {
       "dot": true
     }
-
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-static-files-copy": "^2.5.1"
+    "parcel-plugin-static-files-copy": "^2.5.1",
+    "sass": "^1.32.8"
   }
 }
