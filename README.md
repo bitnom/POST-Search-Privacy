@@ -17,7 +17,7 @@ Chrome extension which replaces insecure GET requests (Like `https://search.com/
 
 - Fixed [the bug](https://github.com/TensorTom/POST-Search-Privacy/issues/1) which was breaking Startpage searches from the address bar.
 - [Added](https://github.com/TensorTom/POST-Search-Privacy/commit/89ef531922034bf83e1f29e5051a3484ffb4b595) dark theme styles to the search loading page so that it looks nicer.
-- Made some improvements (675c642f205f3fddf7968579be1940ceb9f138ca, ebe3cbb9bd0ad7e56ebf404aa5dd56b4a157ce45) to the [README.md](https://github.com/TensorTom/POST-Search-Privacy/blob/master/README.md) file.
+- Made some improvements ([675c642](https://github.com/TensorTom/POST-Search-Privacy/commit/675c642f205f3fddf7968579be1940ceb9f138ca) & [ebe3cbb](https://github.com/TensorTom/POST-Search-Privacy/commit/ebe3cbb9bd0ad7e56ebf404aa5dd56b4a157ce45)) to the [README.md](https://github.com/TensorTom/POST-Search-Privacy/blob/master/README.md) file.
 - [Created](https://github.com/TensorTom/POST-Search-Privacy/commit/2c97460576cc8ea7da6e983a3421cfb8cdfe695c) Chrome Web Store tile images.
 
 ### 1.0.0
@@ -26,6 +26,7 @@ Chrome extension which replaces insecure GET requests (Like `https://search.com/
 
 ## ToDo
 
+- The Chrome Web Store tile image sources were accidentally included in the 1.0.1 distribution .zip file. Once the store approves `1.0.1`, let's remove those files and bump the version to either `1.0.2` or `1.0.1b`.
 - Are there other search engines we could add? Let's find out.
 
 ## Motivation
