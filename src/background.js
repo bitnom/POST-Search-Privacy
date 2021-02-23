@@ -1,16 +1,3 @@
-
-
-function url_to_queries(_url) {
-	var qd = {};
-	if (_url.search)
-		return _url.search.substr(1).split`&`.forEach((item) => {
-			let [k, v] = item.split`=`
-			v = v && decodeURIComponent(v)
-			(qd[k] = qd[k] || []).push(v)
-		})
-}
-
-
 chrome.webRequest.onBeforeRequest.addListener(
 	function (details) {
 		chrome.tabs.update(details.tabId, {
@@ -18,7 +5,6 @@ chrome.webRequest.onBeforeRequest.addListener(
 		})
 		
 		var url = new URL(details.url)
-		//let data = url_to_queries()
 		let qel
 		if (url.searchParams.has('q'))
 			qel = 'q'
@@ -52,7 +38,11 @@ chrome.webRequest.onBeforeRequest.addListener(
 			"http://www.startpage.com/sp/search?*query=*",
 			"http://startpage.com/sp/search?*query=*",
 			"https://www.startpage.com/sp/search?*query=*",
-			"https://startpage.com/sp/search?*query=*"
+			"https://startpage.com/sp/search?*query=*",
+			"http://www.startpage.com/do/search?*q=*",
+			"http://startpage.com/do/search?*q=*",
+			"https://www.startpage.com/do/search?*q=*",
+			"https://startpage.com/do/search?*q=*"
 		],
 	},
 	["blocking"]
