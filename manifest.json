@@ -23,6 +23,10 @@
       "https://www.startpage.com/sp/search?*query=*",
       "http://startpage.com/sp/search?*query=*",
       "https://startpage.com/sp/search?*query=*",
+      "http://www.startpage.com/do/search?*q=*",
+      "https://www.startpage.com/do/search?*q=*",
+      "http://startpage.com/do/search?*q=*",
+      "https://startpage.com/do/search?*q=*",
       "tabs",
       "webRequestBlocking",
       "webRequest"

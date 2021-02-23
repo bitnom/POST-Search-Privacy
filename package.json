@@ -1,6 +1,6 @@
 {
   "name": "http-post-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "https://github.com/TensorTom/POST-Search-Privacy.git",
   "author": "Tom A. <14287229+TensorTom@users.noreply.github.com>",
