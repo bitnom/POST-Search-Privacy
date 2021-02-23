@@ -31,6 +31,7 @@ Chrome extension which replaces insecure GET requests (Like `https://search.com/
 - Make the style & text of the loading page configurable.
 - Reduce the URL matching rules if more concise are possible by the spec.
 - Investigate possibility of changing the HTTP header to POST (Without using [search.html](https://github.com/TensorTom/POST-Search-Privacy/blob/master/src/search.html)) in order to reduce search latency/wait time.
+- Add setting to concatenate user's Startpage "Save your settings without a cookie" string.
 
 ## Motivation
 
