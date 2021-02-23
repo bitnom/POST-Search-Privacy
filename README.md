@@ -36,14 +36,14 @@ This is a pretty simple yet longstanding problem. We all know that if we visit a
 - POST requests aren't cached by the browser or search history (GET requests are).
 - POST requests on an `https` site are hidden from your ISP (GET requests are not).
 
-## GET & POST Requests?
+### GET & POST Requests?
 
 Let's say Alice visits `https://acmebank.com` where she logs into her bank account. To login, she submits a form on the bank's web-site containing her username and password. When she clicks the login/submit button, her username and password are sent securely to `acmebank.com` because:
 
 -   Login forms traditionally use the HTTP (Over HTTPS) method called POST.
 -   POST requests (Forms) are transmitted to the website via HTTP headers. If the URL starts with `https://`, the POST request is encrypted. No outside entities (Her ISP, governments, etc.) can directly spy on what Alice submitted. If it had instead been a GET request, Alice would see something like this in her address bar after clicking submit: `https://acmebank.com/login/?user=alice&password=monkey123`.
 
-## Search Engines Use GET? WHY!
+### Search Engines Use GET? WHY!
 
 It doesn't make much sense, does it? Go to just about any search engine, even the privacy-centric ones (DuckDuckGo, Startpage, etc.), and search for `test123`. You'll see that the address in the address-bar now contains your search query (Like `https://www.startpage.com/do/search?query=test123` ). Congrats. You now have zero privacy of your search habits.
 
@@ -58,7 +58,7 @@ It's not like they don't support POST. Both DuckDuckGo and Startpage both suppor
 
 Hail Hydra (Or don't and use this extension)
 
-## The Simple Solution
+### The Simple Solution
 
 The extension monitors your searches in the background. If it sees a GET request being used to search a popular search-engine, it converts it to POST on-the-fly. The extension doesn't keep any records of your search history and can't transmit it anywhere except securely to the engine your searching. Alice's ISP, government, etc. will only see that she visited `https://www.startpage.com/do/search`. Her search query `test123` (And all future searches) is now transmitted securely and privately.
 
@@ -72,4 +72,4 @@ If you have an idea, feel free to pitch in. Create a new branch and build with:
 
 Then merge with `master` and submit your PR.
 
-### MIT License
+## License: MIT License
