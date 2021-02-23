@@ -30,7 +30,7 @@ Chrome extension which replaces insecure GET requests (Like `https://search.com/
 - Are there other search engines we could add? Let's find out.
 - Make the style & text of the loading page configurable.
 - Reduce the URL matching rules if more concise are possible by the spec.
-- Investigate possiblity of changing the HTTP header to POST mid-flight in order to reduce search latency/wait time.
+- Investigate possibility of changing the HTTP header to POST (Without using [search.html](https://github.com/TensorTom/POST-Search-Privacy/blob/master/src/search.html)) in order to reduce search latency/wait time.
 
 ## Motivation
 
