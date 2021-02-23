@@ -66,10 +66,26 @@ For we who install extensions, problem solved. What about everyone else? Well, t
 
 ## How To Contribute
 
-If you have an idea, feel free to pitch in. Create a new branch and build with:
+If you have an idea, feel free to pitch in.
+
+- Create a new branch with a descriptive name. Don't be afraid to use a sentence. Example:
+
+```
+GH-1_-_StartPage_search_not_working_from_address_bar
+```
+
+- Reference issue numbers in your commit messages. Example (For issue #1):
+
+```
+#1 - Added missing startpage endpoints. Removed redundant function.`
+```
+
+- Bump the version number appropriately.
+- Update the Changelog of [README.md](https://github.com/TensorTom/POST-Search-Privacy/blob/master/README.md) to document what you changed.
+- Build the source using:
 
 `yarn build`
 
-Then merge with `master` and submit your PR.
+- Then, merge your new branch with the `master` branch and submit your PR.
 
 ## License: MIT License
