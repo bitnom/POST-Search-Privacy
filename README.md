@@ -11,6 +11,23 @@ Chrome extension which replaces insecure GET requests (Like `https://search.com/
 - Startpage
 - DuckDuckGo
 
+## Changelog
+
+### 1.0.1
+
+- Fixed [the bug](https://github.com/TensorTom/POST-Search-Privacy/issues/1) which was breaking Startpage searches from the address bar.
+- [Added](https://github.com/TensorTom/POST-Search-Privacy/commit/89ef531922034bf83e1f29e5051a3484ffb4b595) dark theme styles to the search loading page so that it looks nicer.
+- Made some improvements (675c642f205f3fddf7968579be1940ceb9f138ca, ebe3cbb9bd0ad7e56ebf404aa5dd56b4a157ce45) to the [README.md](https://github.com/TensorTom/POST-Search-Privacy/blob/master/README.md) file.
+- [Created](https://github.com/TensorTom/POST-Search-Privacy/commit/2c97460576cc8ea7da6e983a3421cfb8cdfe695c) Chrome Web Store tile images.
+
+### 1.0.0
+
+- Initial release version.
+
+## ToDo
+
+- Are there other search engines we could add? Let's find out.
+
 ## Motivation
 
 This is a pretty simple yet longstanding problem. We all know that if we visit a site with `https://` in the link, it means our web browser has an encrypted (SSL) connection to the web-site. This is great for securely submitting passwords and other personal data. The problem is, the characters that comprise the URL in a GET request are not private at all.
@@ -46,8 +63,12 @@ The extension monitors your searches in the background. If it sees a GET request
 
 For we who install extensions, problem solved. What about everyone else? Well, there have been massive feature request threads going back several years. I participated in some of them. Here we sit.
 
-## How To Build (For Developers)
+## How To Contribute
+
+If you have an idea, feel free to pitch in. Create a new branch and build with:
 
 `yarn build`
+
+Then merge with `master` and submit your PR.
 
 ### MIT License
