@@ -2,6 +2,8 @@
 
 Chrome extension which replaces insecure GET requests (Like `https://search.com/?query=cat+memes`) of search providers with secure POST requests.
 
+**Version:** 1.0.1
+
 ### Supported Search Engines
 
 - Startpage
