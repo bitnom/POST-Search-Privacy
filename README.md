@@ -29,6 +29,7 @@ Chrome extension which replaces insecure GET requests (Like `https://search.com/
 - The Chrome Web Store tile image sources were accidentally included in the 1.0.1 distribution .zip file. Once the store approves `1.0.1`, let's remove those files and bump the version to either `1.0.2` or `1.0.1b`.
 - Are there other search engines we could add? Let's find out.
 - Make the style & text of the loading page configurable.
+- Reduce the URL matching rules if more concise are possible by the spec.
 
 ## Motivation
 
