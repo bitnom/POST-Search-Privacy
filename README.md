@@ -13,6 +13,11 @@ Chrome extension which replaces insecure GET requests (Like `https://search.com/
 
 ## Changelog
 
+### 1.0.2
+
+- Removed build cache from vcs with BFG for (#2)[https://github.com/TensorTom/POST-Search-Privacy/issues/2]
+- Moved Web Store art to art.zip & moved art.zip to root for (#3)https://github.com/TensorTom/POST-Search-Privacy/issues/3
+
 ### 1.0.1
 
 - Fixed [the bug](https://github.com/TensorTom/POST-Search-Privacy/issues/1) which was breaking Startpage searches from the address bar.
