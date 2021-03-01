@@ -1,6 +1,6 @@
 {
   "name": "http-post-search",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "repository": "https://github.com/TensorTom/POST-Search-Privacy.git",
   "author": "Tom A. <14287229+TensorTom@users.noreply.github.com>",
@@ -22,8 +22,8 @@
       }
     ],
     "excludeGlob": [
-      "static/img/logo.xcf",
-      "./static/img/art.7z",
+      "*.xcf",
+      "**/art.7z",
       "./static/img/logo.png"
     ],
     "globOptions": {
