@@ -27,6 +27,10 @@
       "https://www.startpage.com/do/search?*q=*",
       "http://startpage.com/do/search?*q=*",
       "https://startpage.com/do/search?*q=*",
+      "http://www.qwant.com/?*q=*",
+      "https://www.qwant.com/?*q=*",
+      "http://qwant.com/?*q=*",
+      "https://qwant.com/?*q=*",
       "tabs",
       "webRequestBlocking",
       "webRequest"

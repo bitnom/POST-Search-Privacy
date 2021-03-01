@@ -11,13 +11,15 @@ chrome.webRequest.onBeforeRequest.addListener(
 		if (url.searchParams.has('query'))
 			qel = 'query'
 		let qval = url.searchParams.getAll(qel)
+
 		let handler = function (tabId, changeInfo) {
 			if (tabId === details.tabId && changeInfo.status === "complete") {
 				chrome.tabs.onUpdated.removeListener(handler)
 				chrome.tabs.sendMessage(tabId, {
 					data: qval,
 					qel: qel,
-					url: url
+					url: url,
+					qwant: url.searchParams.has('t')
 				})
 			}
 		}
@@ -31,10 +33,12 @@ chrome.webRequest.onBeforeRequest.addListener(
 	},
 	{
 		urls: [
+			// duckduckgo
 			"https://duckduckgo.com/?*q=*",
 			"https://start.duckduckgo.com/?*q=*",
 			"http://duckduckgo.com/?*q=*",
 			"http://start.duckduckgo.com/?*q=*",
+			// startpage
 			"http://www.startpage.com/sp/search?*query=*",
 			"http://startpage.com/sp/search?*query=*",
 			"https://www.startpage.com/sp/search?*query=*",
@@ -42,7 +46,12 @@ chrome.webRequest.onBeforeRequest.addListener(
 			"http://www.startpage.com/do/search?*q=*",
 			"http://startpage.com/do/search?*q=*",
 			"https://www.startpage.com/do/search?*q=*",
-			"https://startpage.com/do/search?*q=*"
+			"https://startpage.com/do/search?*q=*",
+			// qwant
+			"http://www.qwant.com/?*q=*",
+			"http://qwant.com/?*q=*",
+			"https://www.qwant.com/?*q=*",
+			"https://qwant.com/?*q=*"
 		],
 	},
 	["blocking"]
