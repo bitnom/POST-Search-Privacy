@@ -2,7 +2,7 @@
 
 Chrome extension which replaces insecure GET requests (Like `https://search.com/?query=cat+memes`) of search providers with secure POST requests.
 
-**Version:** 1.0.1
+**Version:** 1.0.2
 
 **Install via Chrome Web Store:** https://u.nu/gvxy0
 
@@ -11,10 +11,13 @@ Chrome extension which replaces insecure GET requests (Like `https://search.com/
 - Startpage
 - DuckDuckGo
 
+[Tried to](https://github.com/TensorTom/POST-Search-Privacy/tree/qwant) add the [qwant](https://www.qwant.com/) privacy-centric search-engine but they don't support HTTP POST. Imagine my surprise.
+
 ## Changelog
 
 ### 1.0.2
 
+- Pretty much mangled the git history (oops)
 - Removed build cache from vcs with BFG for (#2)[https://github.com/TensorTom/POST-Search-Privacy/issues/2]
 - Moved Web Store art to art.zip & moved art.zip to root for (#3)https://github.com/TensorTom/POST-Search-Privacy/issues/3
 
