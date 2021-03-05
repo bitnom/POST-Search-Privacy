@@ -1,9 +1,7 @@
-var onMessageHandler = function(msg) {
-	console.log('test')
-	console.log(msg)
+const onMessageHandler = function(msg) {
 	chrome.runtime.onMessage.removeListener(onMessageHandler)
 	if (msg.hasOwnProperty('data') && msg.hasOwnProperty('qel')) {
-		var hin = document.createElement("input")
+		const hin = document.createElement("input")
 		hin.type = "hidden"
 		hin.name = msg.qel
 		hin.id = msg.qel

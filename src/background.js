@@ -3,15 +3,14 @@ chrome.webRequest.onBeforeRequest.addListener(
 		chrome.tabs.update(details.tabId, {
 			url: chrome.runtime.getURL("src/search.html"),
 		})
-		
-		var url = new URL(details.url)
+		const url = new URL(details.url)
 		let qel
 		if (url.searchParams.has('q'))
 			qel = 'q'
 		if (url.searchParams.has('query'))
 			qel = 'query'
-		let qval = url.searchParams.getAll(qel)
-		let handler = function (tabId, changeInfo) {
+		const qval = url.searchParams.getAll(qel)
+		const handler = function (tabId, changeInfo) {
 			if (tabId === details.tabId && changeInfo.status === "complete") {
 				chrome.tabs.onUpdated.removeListener(handler)
 				chrome.tabs.sendMessage(tabId, {
